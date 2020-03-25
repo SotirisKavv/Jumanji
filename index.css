@@ -1,87 +1,132 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-body, html {
+/*                       GLOBAL                           */
+  body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
   }
 
-body {
+  body {
     background: #010101;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", 'Roboto', sans-serif;
     color: white;
   }
 
-header {
-  background: url('./images/jumanji.png') 50% 25%;
-  background-size: cover;
-  height: 100%;
-  background-attachment: fixed;
-}
+  a {
+    text-decoration: none;
+  }
 
-#container{
-    width: 100%;
+/*                      HEADER                      */
+  header {
+    background: url('./images/jumanji.png') 50% 25%;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+  }
+
+  .account {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #eee1c6;
+    top: 5%;
+    right: 7%;
+    font-size: 1.5em;
+    display: flex;
+    flexWrap: wrap;
+    overflow: hidden;
   }
 
-#container h1 {
+  .account a {
+    display: block;
+    box-sizing: border-box;
+    margin: 0 4px;
+    padding: 6px 22px;
     text-transform: uppercase;
-    font-size: 60px;
-    margin: 20px;
-    letter-spacing: 10px;
+    text-align: center;
+    color: inherit;
   }
 
- #container .wrapper {
-   position: relative;
-   top: 45px;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   width: 80%;
- }
-
- #container path {
-    stroke: #eee1c6;
-    fill: #eee1c6;
-    stroke-dasharray: 1800;
-    opacity: 10;
-    animation: animate 3s cubic-bezier(0,0.23,1,.1);
- }
-
- @keyframes animate {
-  0% {
-    opacity: 0;
-    fill: none;
-    stroke-dashoffset: 1800;
+  .login {
+    border: 1pt solid #eee1c6;
   }
 
-  30% {
-    opacity: 10;
-    fill: none;
-    stroke-dashoffset: 1800;
+  .login:hover {
+    cursor: pointer;
+    background-color: #eee1c6;
+    color: #808080;
   }
 
-  90% {
-    fill: rgba(240, 235, 210, 0);
+  .signup:hover {
+    cursor: pointer;
+    color: #808080;
   }
 
-  100% {
-    opacity: 10;
-    fill: rgba(240, 235, 210, 1);
-    stroke-dashoffset: 0;
-  }
- }
+  #container{
+      width: 100%;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #eee1c6;
+    }
 
-.countdown{
+  #container h1 {
+      text-transform: uppercase;
+      font-size: 60px;
+      margin: 20px;
+      letter-spacing: 10px;
+    }
+
+
+  /*                         SVG                             */
+   #container .svg {
+     position: relative;
+     top: 45px;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 80%;
+   }
+
+   #container path {
+      stroke: #eee1c6;
+      fill: #eee1c6;
+      stroke-dasharray: 1800;
+      opacity: 10;
+      animation: animate 3s cubic-bezier(0,0.23,1,.1);
+   }
+
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      fill: none;
+      stroke-dashoffset: 1800;
+    }
+
+    30% {
+      opacity: 10;
+      fill: none;
+      stroke-dashoffset: 1800;
+    }
+
+    80% {
+      fill: rgba(240, 235, 210, 0);
+    }
+
+    100% {
+      opacity: 10;
+      fill: rgba(240, 235, 210, 1);
+      stroke-dashoffset: 0;
+    }
+   }
+
+/*                    COUNTDOWN                          */
+  .countdown{
     margin: 40px 0;
   }
 
-.countd{
+  .countd{
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -92,8 +137,17 @@ header {
     overflow: hidden;
   }
 
-.countd span{
+  .countd span{
     display: block;
     font-size: 26px;
     margin-top:14px;
+  }
+
+  .content {
+    width: 960px;
+    background-color: #333;
+    padding: 5pt;
+    margin: 7pt auto;
+    font-size: 1.5em;
+    box-shadow: 0 30pt 30px 30pt #181818;
   }
