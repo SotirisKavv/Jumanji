@@ -27,7 +27,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
+    color: #eee1c6;
   }
 
 #container h1 {
@@ -42,7 +42,39 @@ header {
    top: 45px;
    left: 50%;
    transform: translate(-50%, -50%);
-   width: 70%;
+   width: 80%;
+ }
+
+ #container path {
+    stroke: #eee1c6;
+    fill: #eee1c6;
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0,0.23,1,.1);
+ }
+
+ @keyframes animate {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1800;
+  }
+
+  30% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1800;
+  }
+
+  90% {
+    fill: rgba(240, 235, 210, 0);
+  }
+
+  100% {
+    opacity: 10;
+    fill: rgba(240, 235, 210, 1);
+    stroke-dashoffset: 0;
+  }
  }
 
 .countdown{
