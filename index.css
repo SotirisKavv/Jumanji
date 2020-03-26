@@ -80,7 +80,7 @@
     }
 
 
-  /*                         SVG                             */
+  /*/*                         SVG                             *\*/
    #container .svg {
      position: relative;
      top: 45px;
@@ -121,7 +121,7 @@
     }
    }
 
-/*                    COUNTDOWN                          */
+/*/*                    COUNTDOWN                          *\*/
   .countdown{
     margin: 40px 0;
   }
@@ -143,6 +143,7 @@
     margin-top:14px;
   }
 
+/*                      MAIN CONTENT                      */
   .content {
     width: 960px;
     background-color: #333;
@@ -151,3 +152,12 @@
     font-size: 1.5em;
     box-shadow: 0 30pt 30px 30pt #181818;
   }
+
+/*                       FOOTER                       */
+footer {
+  text-align: center;
+  font-size: 0.75em;
+  padding: 10px;
+  background: #222;
+  border-top: 1px solid #eee;
+}

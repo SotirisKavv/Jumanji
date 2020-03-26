@@ -81,6 +81,9 @@
          </p>
       </div>
     </main>
+    <footer>
+      &copy; 2020 Webster Devs. All Rights Reserved.
+    </footer>
 
     <script type="text/javascript">
       const date = new Date("30 mar 2020 19:00:00").getTime();
