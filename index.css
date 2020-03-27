@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 /*                       GLOBAL                           */
+  * {
+    box-sizing: border-box;
+  }
+
   body, html {
     margin: 0;
     padding: 0;
@@ -18,6 +22,48 @@
   a {
     text-decoration: none;
   }
+
+  p {
+    line-height: 1.5em;
+    font-size: 1.3em;
+  }
+
+  .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+  }
+
+  .shadow {
+    box-shadow: 0 3px 30px #333;
+  }
+/*                      LAYOUT                      */
+.col-1 {
+  float: left;
+  width: 32%;
+}
+.col-2 {
+  float: left;
+  width: 66%
+}
+
+[class*="col-"] {
+  margin-left: 2%;
+}
+
+.first {
+  margin-left: 0%;
+}
+
+/*                      MEDIA                       */
+
+video, iframe {
+  width: 100%;
+  max-width: 100%;
+}
 
 /*                      HEADER                      */
   header {
@@ -48,7 +94,12 @@
   }
 
   .login {
-    border: 1pt solid #eee1c6;
+    border: 2pt solid #eee1c6;
+    transition-duration: 0.4s;
+  }
+
+  .signup {
+    transition-duration: 0.4s;
   }
 
   .login:hover {
@@ -121,7 +172,15 @@
     }
    }
 
-/*/*                    COUNTDOWN                          *\*/
+   /*/*                    ARROW DOWN                          *\*/
+  .arrow i {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    font-size: 4em;
+    color: #f1f1f1;
+  }
+   /*/*                    COUNTDOWN                          *\*/
   .countdown{
     margin: 40px 0;
   }
@@ -146,11 +205,53 @@
 /*                      MAIN CONTENT                      */
   .content {
     width: 960px;
-    background-color: #333;
     padding: 5pt;
-    margin: 7pt auto;
-    font-size: 1.5em;
-    box-shadow: 0 30pt 30px 30pt #181818;
+    margin: 7pt auto 0;
+    text-align: justify;
+  }
+
+  .content h1 {
+    text-align: center;
+  }
+
+  .content span {
+    font-weight:800;
+  }
+
+  section {
+    background-color: #333;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+
+  section#ageli, section#omada, section#koinotita {
+    border-radius: 4px;
+  }
+
+  section#ageli p, section#omada p, section#koinotita p {
+    font-size: 1em;
+  }
+
+  section button {
+    float: right;
+    background-color: #30693f;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+  }
+
+  section button:hover {
+    cursor: pointer;
+    background-color: #eee1c6;
+    color: #333;
   }
 
 /*                       FOOTER                       */
