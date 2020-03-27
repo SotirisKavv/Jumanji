@@ -14,7 +14,7 @@
     <button id="scroll-btn" class="shadow">
       <i class="fa fa-angle-double-up"></i>
     </button>
-    <div class="social">
+    <div id="social">
       <a target="_blank" href="https://www.facebook.com/groups/14941723679/" class="facebook shadow">
         <i class="fa fa-facebook-f"></i>
       </a>
