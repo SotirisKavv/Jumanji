@@ -1,3 +1,11 @@
+<?php
+  session_start();
+
+  if (isset($_SESSION['uname'])) {
+    header("Location: ./index.php");
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -45,7 +53,8 @@
           case 'sqlerror':
             echo "<div class=\"error\">
                     <h1>505 Internal Error</h1>
-                    <p>Παρακαλώ, συμπληρώστε όλα τα πεδία!</p>
+                    <p>Παρακαλώ, επικοινωνήστε μαζί με την Ομάδα Τεχνικής
+                    Υποστήριξης!</p>
                   </div>";
             break;
           default:

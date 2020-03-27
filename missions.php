@@ -1,2 +1,8 @@
-<?php session_start(); ?>
+<?php
+  session_start();
+  
+  if (!isset($_SESSION['uname'])) {
+    header("Location: ./login.php");
+  }
+?>
 <?php require './index.php'; ?>

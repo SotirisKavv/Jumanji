@@ -169,7 +169,7 @@
           </a>
         </section>
         <section id="missions" class="col-1">
-          <a href="./missions.php">
+          <a href=<?php echo $target = (isset($_SESSION['uname']))?"./missions.php":"./login.php"; ?>>
             Δες τις υπόλοιπες αποστολές
             <i class="fa fa-arrow-right"></i>
           </a>

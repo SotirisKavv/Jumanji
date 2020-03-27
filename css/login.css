@@ -14,6 +14,20 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.error {
+  position: fixed;
+  top: 5%;
+  left: 40%;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #730303;
+  background: #de9595;
+  color: #730303;
+  font-size: 1.1em;
+  padding: 4px 10px;
+  width: 300px;
+}
+
 /*                     FORM                   */
 .box {
   padding: 40px;
