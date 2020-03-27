@@ -14,8 +14,14 @@
       <h1>Εγγραφή</h1>
       <input type="text" name="" placeholder="Username">
       <input type="email" name="" placeholder="Email">
-      <input type="password" name="" placeholder="Password">
-      <input type="submit" name="" value="Login">
+      <input type="password" name="" placeholder="Κωδικός">
+      <input type="submit" name="" value="Εγγραφή">
+      <p>
+        Έχεις ήδη λογαριασμό; Μπες <a href="./login.php">εδώ</a> και δες τις αποστολές σου!
+      </p>
     </form>
+    <footer>
+      &copy; 2020 skavvouras Dev. All Rights Reserved.
+    </footer>
   </body>
 </html>
