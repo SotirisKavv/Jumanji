@@ -64,7 +64,7 @@
 
 #social {
   position: fixed;
-  bottom: 40px;
+  bottom: 45px;
   right: 45px;
   display: flex;
   flex-wrap: wrap;
@@ -141,7 +141,7 @@ video {
 
 /*                      HEADER                      */
   header {
-    background: url('./images/jumanji.png') 50% 25%;
+    background: url('../images/jumanji.png') 50% 25%;
     background-size: cover;
     height: 100%;
     background-attachment: fixed;

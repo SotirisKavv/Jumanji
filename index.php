@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="images/jumanjiLogo.png" />
-    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/b9ef111606.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Welcome to Jumanji Countdown</title>
+    <title>Καλώς ήρθατε στο Jumanji</title>
   </head>
   <body>
     <button id="scroll-btn" class="shadow">
