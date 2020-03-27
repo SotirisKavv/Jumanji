@@ -10,17 +10,17 @@
     <title>Εγγραφθείτε τώρα σύντομα και απλά!</title>
   </head>
   <body>
-    <form class="box" action="signupInDb.php" method="post">
+    <form class="box" action="./php/loginInApp.php" method="post">
       <h1>Σύνδεση</h1>
       <div class="area">
         <i class="fa fa-user"></i>
-        <input type="text" name="" placeholder="Username">
+        <input type="text" name="uname" placeholder="Username">
       </div>
       <div class="area">
         <i class="fa fa-lock"></i>
-        <input type="password" name="" placeholder="Κωδικός">
+        <input type="password" name="pwd" placeholder="Κωδικός">
       </div>
-      <input type="submit" name="" value="Συνδέσου">
+      <input type="submit" name="login-submit" value="Συνδέσου">
       <p>
         Δεν έχεις λογαριασμό; Μπες <a href="./signup.php">εδώ</a> και κάνε την εγγραφή σου τώρα!
       </p>

@@ -14,7 +14,10 @@
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
       header("Location: ../signup.php?error=invalidmail&uname=".$username);
       exit();
-    } elseif ($password !== $passwordRpt) {
+    } elseif (!preg_match('/^[a-zA-Z0-9$:?.~^_]{6,}$/', $password)) {
+      header("Location: ../signup.php?error=6charsorpassword&uname=".$username."&mail=".$email);
+      exit();
+    }elseif ($password !== $passwordRpt) {
       header("Location: ../signup.php?error=invalid_password&uname=".$username."&mail=".$email);
       exit();
     } else{

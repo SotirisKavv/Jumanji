@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,12 +29,20 @@
     </div>
     <header>
       <div class="account">
-        <div class="signup">
-          <a href="./signup.php">Sign Up</a>
-        </div>
-        <div class="login">
-          <a href="./login.php">Login</a>
-        </div>
+        <?php
+          if (isset($_SESSION['uname'])) {
+            echo '<div class="login">
+                    <a href="./php/logout.php">Logout</a>
+                  </div>';
+          } else {
+            echo '<div class="signup">
+                    <a href="./signup.php">Sign Up</a>
+                  </div>
+                  <div class="login">
+                    <a href="./login.php">Login</a>
+                  </div>';
+          }
+         ?>
       </div>
       <div id="container">
         <div class="svg">

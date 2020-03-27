@@ -18,15 +18,19 @@
   $row = $data->fetch_row();
 
   if ($row[0] < 1) {
+
+    $password = password_hash('sotiris19', PASSWORD_DEFAULT);
+
     $sql = "insert into Users (username, email, password, access_level) values
-              ('skavvouras', 'sotos.kavvouras@gmail.com', 'sotiris19', 10);";
+              ('skavvouras', 'sotos.kavvouras@gmail.com','".$password."', 10);";
 
     if ($conn->query($sql) !== TRUE) {
       echo "Error inserting User: " . $conn->error;
     }
 
+    $password = password_hash('nikossenso9', PASSWORD_DEFAULT);
     $sql = "insert into Users (username, email, password, access_level) values
-              ('ngkotis', 'ngkotis@gmail.com', 'nikossenso6', 1);";
+              ('ngkotis', 'ngkotis@gmail.com','".$password."', 1);";
 
     if ($conn->query($sql) !== TRUE) {
       echo "Error inserting User: " . $conn->error;
