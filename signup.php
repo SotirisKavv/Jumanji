@@ -10,12 +10,13 @@
     <title>Εγγραφθείτε τώρα σύντομα και απλά!</title>
   </head>
   <body>
-    <form class="box" action="signupInDb.php" method="post">
+    <form class="box" action="./php/signupInDb.php" method="post">
       <h1>Εγγραφή</h1>
-      <input type="text" name="" placeholder="Username">
-      <input type="email" name="" placeholder="Email">
-      <input type="password" name="" placeholder="Κωδικός">
-      <input type="submit" name="" value="Εγγραφή">
+      <input type="text" name="uname" placeholder="Username">
+      <input type="email" name="email" placeholder="Email">
+      <input type="password" name="pwd" placeholder="Κωδικός">
+      <input type="password" name="pwd-rpt" placeholder="Επαναλάβετε τον κωδικό σας">
+      <input type="submit" name="signup-submit" value="Εγγραφή">
       <p>
         Έχεις ήδη λογαριασμό; Μπες <a href="./login.php">εδώ</a> και δες τις αποστολές σου!
       </p>

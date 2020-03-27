@@ -11,6 +11,7 @@
     <title>Καλώς ήρθατε στο Jumanji</title>
   </head>
   <body>
+    <?php require_once './php/createDB.php'; ?>
     <button id="scroll-btn" class="shadow">
       <i class="fa fa-angle-double-up"></i>
     </button>
@@ -64,17 +65,6 @@
     </header>
     <main>
       <div class="content clearfix">
-        <?php
-          $servername = "db";
-          $username = "sotiris";
-          $password = "skavvouras";
-
-          $conn = new mysqli($servername, $username, $password);
-
-          if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-          }
-        ?>
         <section id="intro" class="shadow">
           <h1>Η παρτίδα του επιτραπέζιου JUMANJI, έχει ξεκινήσει!</h1>
           <p>
