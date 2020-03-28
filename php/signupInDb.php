@@ -43,7 +43,7 @@
             $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
             $stmt->bind_param("sss", $username, $hashedPwd, $email);
             $stmt->execute();
-            header("Location: ../index.php?success");
+            header("Location: ../missions.php");
             exit();
           }
         }

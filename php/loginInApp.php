@@ -38,7 +38,7 @@
             $_SESSION['uname'] = $row['username'];
             $_SESSION['level'] = $row['access_level'];
 
-            header("Location: ../missions.php?succesfulLogin");
+            header("Location: ../missions.php");
             exit();
           }
         } else {

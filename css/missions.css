@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/*                     GLOBALS                        */
+body {
+  margin: 0;
+  padding: 0;
+
+  background: url("../images/missions.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  color: #eee1c6;
+  text-align: justify;
+  font-size: 1.1em;
+
+  box-sizing: border-box;
+}
+
+/*                     MEDIA                      */
+img, iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*                    LAYOUT                     */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.shadow {
+  box-shadow: 0 3px 30px #333;
+}
+
+.col-1 {
+  float: left;
+  width: 32%;
+}
+.col-2 {
+  float: left;
+  width: 66%
+}
+.col-h {
+  float: left;
+  width: 49%;
+}
+
+[class*="col-"] {
+  margin-left: 2%;
+}
+
+.first {
+  margin-left: 0%;
+}
+
+/*/*                    COUNTDOWN                          *\*/
+.countdown {
+  width: 70%;
+  margin: 40px auto;
+}
+
+.countd {
+  text-align: center;
+ display: inline-block;
+ width: 80px;
+ height: 80px;
+ border: 2px solid;
+ border-radius: 50%;
+ margin: 0 30px;
+ font-size: 12px;
+ overflow: hidden;
+}
+
+.countd span {
+ display: block;
+ font-size: 26px;
+ margin-top:14px;
+}
+
+.countdown p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+/*                    BUTTONS                */
+#scroll-btn {
+  position: fixed;
+  bottom: 45px;
+  left: 50px;
+  height: 80px;
+  width: 80px;
+  font-size: 4em;
+  background-color: #222;
+  color: #f1f1f1;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#scroll-btn:hover {
+  background-color: #333;
+}
+
+#social {
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2em;
+}
+
+#social a {
+  margin: 0 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: white;
+  overflow: hidden;
+  transition-duration: 0.4s;
+  text-align: center;
+}
+
+.facebook {
+  background-color: #4267B2;
+  padding: 7px;
+}
+
+.instagram {
+  background:  radial-gradient(circle at 30% 107%,
+     #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  padding: 6px;
+}
+
+.youtube {
+  background-color: #BB0000;
+  padding: 5px;
+}
+
+#social a:hover {
+  background: white;
+}
+
+#social a.facebook:hover {
+  color: #4267B2;
+}
+
+#social a.instagram:hover {
+  color: #833ab4;
+}
+
+#social a.youtube:hover {
+  color: #BB0000;
+}
+
+/*                       HEADER                        */
+header, main {
+  margin: 0 auto;
+  width: 960px;
+  display: block;
+}
+
+header {
+  height: 100%;
+  padding: 1rem 4pt;
+  font-size: 2rem;
+  clear: both;
+  margin: 14rem auto;
+  background-color: rgba(25,25,25,0.5);
+  border-radius: 5px;
+}
+
+.account {
+  position: absolute;
+  top: 5%;
+  right: 7%;
+  font-size: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.account a {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 4px;
+  padding: 6px 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.logout {
+  border: 2pt solid #eee1c6;
+  transition-duration: 0.4s;
+}
+
+.logout:hover {
+  cursor: pointer;
+  background-color: #eee1c6;
+  color: #808080;
+}
+
+header p {
+  padding-top: 50px;
+  font-size: 1.3rem;
+}
+
+header span {
+  color: #3498db;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/*                       MAIN                        */
+main {
+  background: #222;
+  padding: 10pt;
+}
+
+.mission {
+  width: 90%;
+  margin: 10px auto 30px;
+  padding: 4pt;
+  border-bottom: 1px solid #bbb;
+}
+
+.mission p {
+  font-size: 1.2rem;
+}
+
+.mission h2 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+section .img {
+  margin-top: 20px;
+
+}
+
+/*                       FOOTER                       */
+footer {
+  text-align: center;
+  font-size: 0.75em;
+  padding: 10px;
+  background: #222;
+  border-top: 1px solid #eee;
+}

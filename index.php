@@ -48,25 +48,6 @@
         <div class="svg">
           <?php require 'svg.php'; ?>
         </div>
-        <!--<h2>Σύντομα κοντά σας</h2>
-         <div class="countdown">
-          <div class="countd">
-            <span id="days">00</span>
-            DAYS
-          </div>
-          <div class="countd">
-            <span id="hours">00</span>
-            HOURS
-          </div>
-          <div class="countd">
-            <span id="mins">00</span>
-            MINUTES
-          </div>
-          <div class="countd">
-            <span id="secs">00</span>
-            SECONDS
-          </div>
-        </div> -->
       </div>
       <div class="arrow">
         <i class="fa fa-angle-down"></i>
@@ -105,19 +86,19 @@
           <h3>Αγέλη</h3>
           <p>Τα παιδιά της Αγέλης στέλνουν το mail τους στον
           παρακάτω σύνδεσμο.</p>
-          <button>Στείλτε</button>
+          <a href="mailto: giannisgizis16@gmail.com">Στείλτε</a>
         </section>
         <section id="omada" class="col-1 shadow">
           <h3>Ομάδα</h3>
           <p>Τα παιδιά της Ομάδας στέλνουν το mail τους στον
           παρακάτω σύνδεσμο.</p>
-          <button>Στείλτε</button>
+          <a href="mailto: varibalas@yahoo.gr">Στείλτε</a>
         </section>
         <section id="koinotita" class="col-1 shadow">
         <h3>Κοινότητα</h3>
           <p>Τα παιδιά της Κοινότητας στέλνουν το mail τους στον
           παρακάτω σύνδεσμο.</p>
-          <button>Στείλτε</button>
+          <a href="mailto: kristi.adri28@gmail.com">Στείλτε</a>
         </section>
       </div>
       <div class="content clearfix">
@@ -199,33 +180,5 @@
 
     });
     </script>
-    <!-- <script type="text/javascript">
-      const date = new Date("30 mar 2020 19:00:00").getTime();
-      const x = setInterval(() =>{
-        const now = new Date().getTime();
-        const d = date - now;
-
-        var days= Math.floor(d/(1000*60*60*24)).toString();
-        var hours= Math.floor((d%(1000*60*60*24))/(1000*60*60)).toString();
-        var minutes= Math.floor((d%(1000*60*60))/(1000*60)).toString();
-        var seconds= Math.floor((d%(1000*60))/1000).toString();
-
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("mins").innerHTML = minutes;
-        document.getElementById("secs").innerHTML = seconds;
-        console.log(d)
-
-        if (d<=0){
-          clearInterval(x)
-
-          document.getElementById("days").innerHTML = '00';
-          document.getElementById("hours").innerHTML = '00';
-          document.getElementById("mins").innerHTML = '00';
-          document.getElementById("secs").innerHTML = '00';
-        }
-
-      }, 1000)
-    </script> -->
   </body>
 </html>

@@ -254,27 +254,6 @@ video {
     font-size: 4em;
     color: #f1f1f1;
   }
-   /*/*                    COUNTDOWN                          *\*/
-  .countdown{
-    margin: 40px 0;
-  }
-
-  .countd{
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    border: 2px solid;
-    border-radius: 50%;
-    margin: 0 30px;
-    font-size: 12px;
-    overflow: hidden;
-  }
-
-  .countd span{
-    display: block;
-    font-size: 26px;
-    margin-top:14px;
-  }
 
 /*                      MAIN CONTENT                      */
   .content {
@@ -302,7 +281,7 @@ video {
     font-size: 1em;
   }
 
-  section button {
+  section#ageli a, section#omada a, section#koinotita a {
     float: right;
     background-color: #30693f;
     border: none;
