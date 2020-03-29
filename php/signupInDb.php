@@ -38,12 +38,16 @@
           $sql = "insert into Users (username, password, email, access_level, name) values (?, ?, ?, 1, ?)";
           $stmt = $conn->stmt_init();
           if (!mysqli_stmt_prepare($stmt,$sql)) {
-            header("Location: ../signup.php?error=sqlerror");
+            header("Location: ../signup.php?error=sqlerror%202");
             exit();
           } else {
             $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
             $stmt->bind_param("ssss", $username, $hashedPwd, $email, $name);
             $stmt->execute();
+            $to_email = 'sotos.kavvouras@gmail.com';
+            $subject = '[Jumanji] New Registration at menoumespiti.bakaros.com';
+            $message = 'A new registration has appeared by '.$email;
+            mail($to_email, $subject, $message);
             header("Location: ../missions.php");
             exit();
           }

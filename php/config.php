@@ -1,8 +1,8 @@
 <?php
-  $servername = "db43.grserver.gr:3306";
-  $username = "menoumeusr";
-  $password = "Djp1a77!";
-  $db_name = "menoumespiti";
+  $servername = "db";
+  $username = "sotiris";
+  $password = "skavvouras";
+  $db_name = "jumanji_db";
 
   $conn = new mysqli($servername, $username, $password, $db_name);
 
