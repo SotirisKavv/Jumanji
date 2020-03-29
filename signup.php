@@ -66,6 +66,7 @@
     <form class="box" action="./php/signupInDb.php" method="post">
       <h1>Εγγραφή</h1>
       <input type="text" name="uname" placeholder="Username">
+      <input type="text" name="name" placeholder="Ονοματεπώνυμο">
       <input type="email" name="email" placeholder="Email">
       <input type="password" name="pwd" placeholder="Κωδικός">
       <input type="password" name="pwd-rpt" placeholder="Επαναλάβετε τον κωδικό σας">

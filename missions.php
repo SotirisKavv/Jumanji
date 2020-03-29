@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/missions.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/b9ef111606.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Αποστολές</title>
   </head>

@@ -4,11 +4,12 @@
     require 'config.php';
 
     $username = $_POST['uname'];
+    $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['pwd'];
     $passwordRpt = $_POST['pwd-rpt'];
 
-    if (empty($username) || empty($email) || empty($password) || empty($passwordRpt)) {
+    if (empty($username) || empty($email) || empty($password) || empty($passwordRpt) || empty($name)) {
       header("Location: ../signup.php?error=emptyfields&uid=".$username."&mail=".$email);
       exit();
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -34,14 +35,14 @@
           header("Location: ../signup.php?error=usernameTaken&mail=".$email);
           exit();
         } else {
-          $sql = "insert into Users (username, password, email, access_level) values (?, ?, ?, 1)";
+          $sql = "insert into Users (username, password, email, access_level, name) values (?, ?, ?, 1, ?)";
           $stmt = $conn->stmt_init();
           if (!mysqli_stmt_prepare($stmt,$sql)) {
             header("Location: ../signup.php?error=sqlerror");
             exit();
           } else {
             $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
-            $stmt->bind_param("sss", $username, $hashedPwd, $email);
+            $stmt->bind_param("ssss", $username, $hashedPwd, $email, $name);
             $stmt->execute();
             header("Location: ../missions.php");
             exit();

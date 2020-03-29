@@ -27,13 +27,5 @@
     if ($conn->query($sql) !== TRUE) {
       echo "Error inserting User: " . $conn->error;
     }
-
-    $password = password_hash('nikossenso9', PASSWORD_DEFAULT);
-    $sql = "insert into Users (username, email, password, access_level) values
-              ('ngkotis', 'ngkotis@gmail.com','".$password."', 1);";
-
-    if ($conn->query($sql) !== TRUE) {
-      echo "Error inserting User: " . $conn->error;
-    }
   }
 ?>
