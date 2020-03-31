@@ -164,14 +164,16 @@
           } elseif ($date <= $now) {
             echo "<div class=\"mission clearfix\">
                     <h2>ΔΟΚΙΜΑΣΙΑ 3η: ΕΛΕΥΘΕΡΩΣΕ ΤΗ ΡΑΞΑ!</h2>
-                    <section class=\"col-1 first\">
-                      <p>
-
-                      </p>
+                    <section class=\"col-2 first\">
+                      <iframe src=\"https://drive.google.com/file/d/1OFuNI0l7XHyp1k7-5_MsCuIXwAJHUd7-/preview\"
+                        width=\"640\" height=\"380\">
+                        </iframe>
                     </section>
-                    <section class=\"col-2\">
-                      <iframe src=\"#\"
-                         width=\"640\" height=\"380\"></iframe>
+                    <section class=\"col-1\">
+                      <p>
+                        Φτιάξε το δικό σου πύργο... με τραπουλόχαρτα
+                        (τουλάχιστον 2 ορόφων) και στείλε μαας σέλφι φωτογραφία.
+                      </p>
                     </section>
                   </div>";
           }
