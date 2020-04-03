@@ -181,8 +181,6 @@
         }
         if ($_SESSION['level']>=4) {
           $date = new DateTime("2020-4-4 19:00:00.00");
-          echo $date->format('Y-m-d H:i:s')."<br />";
-          echo $now->format('Y-m-d H:i:s');
           if ($date>$now) {
             echo "<div class=\"mission clearfix\">
                     <h2>Δοκιμασία 4η</h2>
