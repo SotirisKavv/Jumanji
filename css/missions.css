@@ -2,11 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 /*                     GLOBALS                        */
+html {
+  font-size: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
 
-  background: url("../images/missions.jpg");
+  background: url("../images/missions.jpg") 50% 25%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

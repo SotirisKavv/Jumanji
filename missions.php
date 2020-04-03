@@ -84,9 +84,10 @@
         </section>
       </div>
       <?php
-        $now = new DateTime(null, new DateTimeZone('EET'));
+        date_default_timezone_set('EET');
+        $now = new DateTime();
         if ($_SESSION['level']>=2) {
-          $date = new DateTime("2020-3-28 19:00:00.00", new DateTimeZone('EET'));
+          $date = new DateTime("2020-3-28 19:00:00.00");
           if ($date>$now) {
             echo "<div class=\"mission clearfix\">
                     <h2>Δοκιμασία 2η</h2>
@@ -135,7 +136,7 @@
           }
         }
         if ($_SESSION['level']>=3) {
-          $date = new DateTime("2020-3-31 19:00:00.00", new DateTimeZone('EET'));
+          $date = new DateTime("2020-3-31 19:00:00.00");
           if ($date>$now) {
             echo "<div class=\"mission clearfix\">
                     <h2>Δοκιμασία 3η</h2>
@@ -179,7 +180,9 @@
           }
         }
         if ($_SESSION['level']>=4) {
-          $date = new DateTime("2020-4-4 19:00:00.00", new DateTimeZone('EET'));
+          $date = new DateTime("2020-4-4 19:00:00.00");
+          echo $date->format('Y-m-d H:i:s')."<br />";
+          echo $now->format('Y-m-d H:i:s');
           if ($date>$now) {
             echo "<div class=\"mission clearfix\">
                     <h2>Δοκιμασία 4η</h2>
@@ -210,18 +213,20 @@
                     <h2>ΔΟΚΙΜΑΣΙΑ 4η: ΕΛΕΥΘΕΡΩΣΕ ΤΗ ΧΕΛΩΝΑ!</h2>
                     <section class=\"col-1 first\">
                       <p>
-
+                        Φύτεψε το δικό σου φυτό σε κήπο ή σε γλάστρα και στείλε
+                        μας 4 φωτογραφίες με την ανάπτυξη του φυτού.
                       </p>
                     </section>
                     <section class=\"col-2\">
-                      <iframe src=\"#\"
-                         width=\"640\" height=\"380\"></iframe>
+                      <iframe src=\"https://drive.google.com/file/d/1izketSsn7UT796IyNEZXK28iUS7CIpf3/preview\"
+                        width=\"640\" height=\"340\">
+                        </iframe>
                     </section>
                   </div>";
           }
         }
         if ($_SESSION['level']>=5) {
-          $date = new DateTime("2020-4-7 19:00:00.00", new DateTimeZone('EET'));
+          $date = new DateTime("2020-4-7 19:00:00.00");
           if ($date>$now) {
             echo "<div class=\"mission clearfix\">
                     <h2>Δοκιμασία 5η</h2>
@@ -263,7 +268,7 @@
           }
         }
         if ($_SESSION['level']>=6) {
-          $date = new DateTime("2020-4-11 19:00:00.00", new DateTimeZone('EET'));
+          $date = new DateTime("2020-4-11 19:00:00.00");
           if ($date>$now) {
             echo "<div class=\"mission clearfix\">
                     <h2>Δοκιμασία 6η</h2>
@@ -305,7 +310,7 @@
           }
         }
         if ($_SESSION['level']>=7) {
-          $date = new DateTime("2020-4-14 19:00:00.00", new DateTimeZone('EET'));
+          $date = new DateTime("2020-4-14 19:00:00.00");
           if ($date>$now) {
             echo "<div class=\"mission clearfix\">
                     <h2>Δοκιμασία 7η</h2>
@@ -347,7 +352,7 @@
           }
         }
         if ($_SESSION['level']>=8) {
-          $date = new DateTime("2020-4-21 19:00:00.00", new DateTimeZone('EET'));
+          $date = new DateTime("2020-4-21 19:00:00.00");
           if ($date>$now) {
             echo "<div class=\"mission clearfix\">
                     <h2>Δοκιμασία 8η</h2>
@@ -389,8 +394,7 @@
           }
         }
         if ($_SESSION['level']>=9) {
-          $date = new DateTime("2020-4-25 19:00:00.00", new DateTimeZone('EET'));
-          $now = new DateTime(null, new DateTimeZone('EET'));
+          $date = new DateTime("2020-4-25 19:00:00.00");
           if ($date>$now) {
             echo "<div class=\"mission clearfix\">
                     <h2>Δοκιμασία 9η</h2>
@@ -432,8 +436,7 @@
           }
         }
           if ($_SESSION['level']>=10) {
-            $date = new DateTime("2020-4-28 19:00:00.00", new DateTimeZone('EET'));
-            $now = new DateTime(null, new DateTimeZone('EET'));
+            $date = new DateTime("2020-4-28 19:00:00.00");
             if ($date>$now) {
               echo "<div class=\"mission clearfix\">
                       <h2>Δοκιμασία 10η</h2>

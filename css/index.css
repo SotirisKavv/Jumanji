@@ -6,6 +6,10 @@
     box-sizing: border-box;
   }
 
+  html {
+    font-size: 100%;
+  }
+
   body, html {
     margin: 0;
     padding: 0;
