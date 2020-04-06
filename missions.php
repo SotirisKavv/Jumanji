@@ -224,7 +224,7 @@
           }
         }
         if ($_SESSION['level']>=5) {
-          $date = new DateTime("2020-4-7 19:00:00.00");
+          $date = new DateTime("2020-4-5 19:00:00.00");
           if ($date>$now) {
             echo "<div class=\"mission clearfix\">
                     <h2>Δοκιμασία 5η</h2>
@@ -253,14 +253,15 @@
           } elseif ($date <= $now) {
             echo "<div class=\"mission clearfix\">
                     <h2>ΔΟΚΙΜΑΣΙΑ 5η: ΕΛΕΥΘΕΡΩΣΕ ΤΟ ΣΚΑΝΤΖΟΧΟΙΡΟ!</h2>
-                    <section class=\"col-1 first\">
-                      <p>
-
-                      </p>
+                    <section class=\"col-2 first\">
+                      <iframe src=\"https://drive.google.com/file/d/1EM7qQXrkU4TVtsc1k3386ExXG6tk_MvD/preview\"
+                        width=\"640\" height=\"330\"></iframe>
                     </section>
-                    <section class=\"col-2\">
-                      <iframe src=\"#\"
-                         width=\"640\" height=\"380\"></iframe>
+                    <section class=\"col-1\">
+                      <p>
+                        Δημιούργησε το γενεολογικό σου δένδρο και φτιάξε το
+                        οικογενειακό οικόσημο. Περιμένουμε φωτογραφία.
+                      </p>
                     </section>
                   </div>";
           }

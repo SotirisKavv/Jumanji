@@ -29,6 +29,10 @@ img, iframe {
   max-width: 100%;
 }
 
+iframe {
+  border: none;
+}
+
 /*                    LAYOUT                     */
 .clearfix:after {
   content: ".";
@@ -236,7 +240,7 @@ main {
 .mission {
   width: 90%;
   margin: 10px auto 30px;
-  padding: 4pt;
+  padding: 15px;
   border-bottom: 1px solid #bbb;
 }
 
