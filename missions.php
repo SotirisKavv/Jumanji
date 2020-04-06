@@ -224,7 +224,7 @@
           }
         }
         if ($_SESSION['level']>=5) {
-          $date = new DateTime("2020-4-5 19:00:00.00");
+          $date = new DateTime("2020-4-7 19:00:00.00");
           if ($date>$now) {
             echo "<div class=\"mission clearfix\">
                     <h2>Δοκιμασία 5η</h2>
