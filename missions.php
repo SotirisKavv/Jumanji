@@ -298,12 +298,15 @@
                     <h2>ΔΟΚΙΜΑΣΙΑ 6η: ΕΛΕΥΘΕΡΩΣΕ ΤΗΝ ΜΠΑΓΚΙΡΑ!</h2>
                     <section class=\"col-1 first\">
                       <p>
-
+                        Κάνε vlog με την παρασκευή της αγαπημένης σου συνταγής,
+                        ενώ παράλληλα θα τη φτιάχνεις. Βίντεο και φωτογραφίες με
+                        τη συνταγή (υλικά, εκτέλεση).
                       </p>
                     </section>
                     <section class=\"col-2\">
-                      <iframe src=\"#\"
-                         width=\"640\" height=\"380\"></iframe>
+                      <iframe src=\"https://drive.google.com/file/d/1OHjo-mqR10sRjwUmoLxhLwUhwFN1t0gp/preview\"
+                        width=\"640\" height=\"330\">
+                        </iframe>
                     </section>
                   </div>";
           }
