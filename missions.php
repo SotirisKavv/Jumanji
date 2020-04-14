@@ -341,14 +341,16 @@
           } elseif ($date <= $now) {
             echo "<div class=\"mission clearfix\">
                     <h2>ΔΟΚΙΜΑΣΙΑ 7η: ΕΛΕΥΘΕΡΩΣΕ ΤΟ ΔΕΛΦΙΝΙ (ΤΟ ΜΙΚΡΟ)!</h2>
-                    <section class=\"col-1 first\">
-                      <p>
-
-                      </p>
+                    <section class=\"col-2 first\">
+                      <iframe src=\"https://drive.google.com/file/d/1flrgF0jsCI9pWJ7ZaU33XbnHua-q1zum/preview\"
+                        width=\"640\" height=\"330\">
+                        </iframe>
                     </section>
-                    <section class=\"col-2\">
-                      <iframe src=\"#\"
-                         width=\"640\" height=\"380\"></iframe>
+                    <section class=\"col-1\">
+                      <p>
+                        Μάθε το όνομά σου στη νοηματική γλώσσα και στείλε το μας
+                        σε βίντεο.
+                      </p>
                     </section>
                   </div>";
           }
