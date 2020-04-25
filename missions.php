@@ -387,12 +387,15 @@
                     <h2>ΔΟΚΙΜΑΣΙΑ 8Η: ΕΛΕΥΘΕΡΩΣΤΗ ΤΟ ΣΑΧΥ!</h2>
                     <section class=\"col-1 first\">
                       <p>
-
+                        Βρες τη χορογραφία του αγαπημένου σου τραγουδιού και
+                        αντίγραψέ την! Εάν το τραγούδι δεν έχει χορογραφία,
+                        θα βρεις άλλο!
                       </p>
                     </section>
                     <section class=\"col-2\">
-                      <iframe src=\"#\"
-                         width=\"640\" height=\"380\"></iframe>
+                      <iframe src=\"https://drive.google.com/file/d/10xa7f3dWXMhOy1XdEc51jh26m_3zma2T/preview\"
+                        width=\"640\" height=\"330\">
+                        </iframe>
                     </section>
                   </div>";
           }
@@ -427,14 +430,21 @@
           } elseif ($date <= $now) {
             echo "<div class=\"mission clearfix\">
                     <h2>ΔΟΚΙΜΑΣΙΑ 9Η: ΕΛΕΥΘΕΡΩΣΕ ΤΗΝ ΙΚΚΥ!</h2>
-                    <section class=\"col-1 first\">
-                      <p>
+                    <section class=\"col-2 first\">
 
-                      </p>
+                        <iframe src=\"https://drive.google.com/file/d/19YHXSMKqX16IBGrxXRIkPsYfPnDrRaeY/preview\"
+                          width=\"640\" height=\"480\">
+                        </iframe>
+
                     </section>
-                    <section class=\"col-2\">
-                      <iframe src=\"#\"
-                         width=\"640\" height=\"380\"></iframe>
+                    <section class=\"col-1\">
+                      <p>
+                        Διάλεξε και υλοποίησε τουλάχιστον ένα πείραμα από το
+                        αυτό το
+                        <a href=\"https://www.youtube.com/watch?v=wPBWfeo8JXs&fbclid=IwAR2N35BzeYxgIxXBy7KZaQLlKUemhY4lpsLLIXQ_IlGw1ZTAC7cI3hR2PJc\">
+                          link
+                        </a>.
+                      </p>
                     </section>
                   </div>";
           }
@@ -471,12 +481,17 @@
                       <h2>ΔΟΚΙΜΑΣΙΑ 10Η: ΕΛΕΥΘΕΡΩΣΕ ΤΟ ΜΑΟ!</h2>
                       <section class=\"col-1 first\">
                         <p>
-
+                          Βγες στο μπαλκόνι, στην ταράτσα ή στον κήπο σου και
+                          βγάλε φωτογραφία τη θέα και βγάλε βίντεο κάνοντας τις
+                          παρακάτω γυμναστικές ασκήσεις:
                         </p>
+                        <img src=\"images/yoga.jpg\">
+
                       </section>
                       <section class=\"col-2\">
-                        <iframe src=\"#\"
-                           width=\"640\" height=\"380\"></iframe>
+                        <iframe src=\"https://drive.google.com/file/d/1y3OKTQ8LMgort0qS6idM3V-_7KQmwZ8p/preview\"
+                          width=\"640\" height=\"330\">
+                          </iframe>
                       </section>
                     </div>";
             }
